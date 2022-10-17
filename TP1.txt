@@ -1,0 +1,57 @@
+  Exercice 1 :
+  1)
+  Répertoire: C:\Users\Ventr\IdeaProjects\TP1\out\production
+Debut du main
+Debut de m2
+Dans m2 avant appel de m1
+Debut de m1
+Fin de m1
+Dans m2 apres appel de m1
+Fin de m2
+x = 5.0
+Fin du main
+
+2)
+ Répertoire : C:\Users\Ventr\IdeaProjects\TP1\out\production
+Debut du main
+Debut de m2
+Dans m2 avant appel de m1
+Debut de m1
+parametre de signe oppose a l'attribut
+Fin de m2
+x = 10.0
+Fin du main
+
+3)
+ Répertoire : C:\Users\Ventr\IdeaProjects\TP1\out\production
+Debut du main
+Debut de m2
+Dans m2 avant appel de m1
+Exception in thread "main" E1: parametre de m1 null
+        at TraceException.m1(TraceException.java:15)
+        at TraceException.m2(TraceException.java:26)
+        at TraceException.main(TraceException.java:37)
+
+Exercice 2 :
+main : debut
+main : appel de methodeA
+  methodeA : debut
+  methodeA : appel de methodeB
+    methodeB : debut
+    methodeB : tente d’acceder a args[99]
+    methodeB : capture : java.lang.ArrayIndexOutOfBoundsException: 99
+    methodeB : execute finally
+    methodeB : fin
+  methodeA : retour de methodeB
+  methodeA : execute finally
+  methodeA : fin
+main : retour de methodeA
+main : fin
+
+Le code se déroule correctement les Systemout.println se lise correctement l'IOExcepion est lancée car l'args est supérieur à 99
+
+//TODO
+
+
+
+
