@@ -18,9 +18,8 @@ public class DataSetReader {
 
 
         if (sc.hasNextInt()) {
-            int taille = (int) sc.nextDouble();
-            this.data = new double [taille];
             int longueur = sc.nextInt();
+            this.data = new double [longueur];
             for (int i = 0; i < longueur; i++) {
                 readValue(sc, i);
             }

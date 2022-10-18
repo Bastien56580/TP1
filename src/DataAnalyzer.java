@@ -11,7 +11,10 @@ public class DataAnalyzer {
         System.out.println("Nom du fichier à analyser svp :");
         try{
             String fichierValeur = scanner.nextLine();
-            dataSetReader.readFile("src/valeurs.txt");
+            double[] lesValeurs = dataSetReader.readFile("src/valeurs.txt");
+            for (double valeur : lesValeurs){
+                System.out.println(valeur);
+            }
         } catch (FileNotFoundException | BadDataException e){
             System.out.println(e.getMessage());
             System.out.println("Ressaisir le nom du fichier");
