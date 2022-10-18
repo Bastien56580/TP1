@@ -18,16 +18,6 @@ public class DataAnalyzer {
             String fichierValeur = scanner.nextLine();
             dataSetReader.readFile("src/valeurs.txt");
         }
-        
-
-
-
-
-
-
-
-
-
 
         String chemin = new Scanner(System.in).nextLine();
     }
